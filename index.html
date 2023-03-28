@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW03-FLEX</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+
+html{
+	font-family: roboto, monospace;
+}
+
+
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+            /* background-position: 0 -60px; */
+            /* background-color: blue;
+            background-blend-mode: lighten; */
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0px solid #e7e7e7;
+  background-color: #f3f3f300;
+}
+
+li {
+  float: right;
+  margin-right:20%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+
+.all{
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	color: white;
+	margin-top: 48px;
+}
+h1{
+	font-size: 40px;
+}
+
+.under{
+	position: relative;
+	top: 48px;
+	letter-spacing: 2px;
+	text-shadow: 4px 4px rgba(255, 255, 255, 0.327);
+}
+.construction{
+	letter-spacing: 1px;
+	text-shadow: 4px 4px rgba(255, 255, 255, 0.327);
+}
+
+p{
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.site{
+	position: relative;
+	bottom: 16px;
+}
+
+.box{
+	display: flex;
+	margin-top: -16px;
+	box-shadow: 0px 0px 20px 0px rgb(10, 236, 248);
+}
+
+.blue{
+	width: 230px;
+	height: 8px;
+	background-color: rgb(133, 195, 234);
+}
+.white{
+	width: 50px;
+	height: 8px;
+	background-color: rgb(255, 255, 255);
+}
+
+.percent{
+	width: 20%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 10px;
+	margin-bottom: 32px;
+}
+.notifyy{
+	color: rgb(11, 11, 11);
+	height: 24px;
+	border: 0px;
+	font-size: 12px;
+	width: 80px;
+	/* border-radius: 5px; */
+	background-color: rgb(133, 195, 234);
+	/* width: 50%; */
+}
+.logo{
+	margin-top: 24px;
+	display: flex;
+	gap: 16px;
+}
+.fb{
+	font-size: 30px;
+}
+.tw{
+	font-size: 30px;
+}
+.linkin{
+	font-size: 30px;
+}
+.mail{
+	font-size: 30px;
+}
+
+.lineandtext{
+	margin-top: 200px;
+
+}
+
+.line{
+	margin: auto;
+	width: 60%;
+	border-color: rgba(255, 255, 255, 0.059);
+}
+.textbottom{
+	
+	text-align: center;
+	font-size: 10px;
+	color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav id='menu'>
+    
+        <ul>
+          <li><a href='http://'>HOME</a></li>
+        </ul>
+      </nav>
+
+<div class="all">
+
+	<div class="under">
+		<h1>UNDER</h1>
+    </div>
+	
+    <div class="construction">
+		<h1>CONSTRUCTION</h1>
+    </div>
+	
+    <div class="site">
+		<p>SITE NEARLY READY</p>
+    </div>
+	
+    <div class="box">
+		<div class="blue"></div>
+		<div class="white"></div>
+	</div>
+	
+    <div class="percent">
+		<div class="zero">
+			<span>0%</span>
+		</div>
+		<div class="hundred">
+			<span>100%</span>
+		</div>
+    </div>
+	
+    <div class="notify">
+		<input class="notifyy" type="button" value="Notify Me!">
+    </div>
+	
+    <div class="logo">
+		<div class="fb">
+
+			<i class="fa-brands fa-facebook"></i>
+		</div>
+		<div class="tw">
+
+			<i class="fa-brands fa-twitter"></i>
+		</div>
+		<div class="linkin">
+
+			<i class="fa-brands fa-linkedin"></i>
+		</div>
+		<div class="mail">
+
+			<i class="fa-solid fa-envelope"></i>
+		</div>
+	</div>
+	
+</div>
+
+<div class="lineandtext">
+	<div class="line"><hr></div>
+	<div class="textbottom"><span>@2023 by Under Construction</span></div>
+</div>
+
+</body>
+</html>
